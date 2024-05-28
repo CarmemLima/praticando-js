@@ -10,18 +10,18 @@
     
     <main>
         <span id="image">
-            <img src="imagens/_3182b9f8-f0ad-4879-86cd-e53352271a36.jpg" alt="" srcset="">
+            <img src=imagens/_3182b9f8-f0ad-4879-86cd-e53352271a36.jpg" alt="img" srcset="imagens/_3182b9f8-f0ad-4879-86cd-e53352271a36.jpg">
         </span>
         <form action="#" method="get" id="login" > <!--os parametros do input so funcionarão se estiverem dentro da tag form-->
             <span>
                 <h1>Olá,<br>seja bem vindo!</h1>
                 <p>digite seus dados para entrar</p>
             
-                <label for="inome" >Nome:</label>
-                <input type="text" name="nome" id="nome" class="campo" required minlength="5" maxlength="20">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" class="campo" required minlength="5" maxlength="20" autocomplete="on">
                 <br>
-                <label for="iemail">E-mail:</label>
-                <input type="email" name="email" id="email" class="campo" minlength="20" required>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" class="campo" minlength="20" required autocomplete="on">
                 <br><br>
                 <button type="submit" onclick="clique()" id="pp">LogIn</button>
             </span>
