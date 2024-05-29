@@ -3,14 +3,17 @@
 @media screen and (min-width: 250px) and (max-width: 600px){
     /*media screen para telas menores/celular*/
 span>img{
-        width: 250px;
+        width: 230px;
         height: 300px;
-        
+        margin-left: 40px;
     }
-    main{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+span#login{
+    margin-right: 40px;
+}    
+
+main{
+   
+}
 
 }
 
