@@ -3,37 +3,38 @@
 @media screen and (min-width: 150px) and (max-width: 600px){
     /*media screen para telas menores/celular*/
 
+*{
+    margin: 0px;
+      
+}
 
 span>img{
         width: 230px;
         height: 300px;
         margin-left: 40px;
     }
-span#login{
+    
+#login{
     margin-right: 40px;
-}    
+    }    
 }
 
-*{
-    margin: 0px;
-  
-}
+
 
 body, html{
+   
     width: 100vw;
     background-color: rgba(7, 37, 37, 0.767);
     background: url('../imagens/fundo-tech.jpg');
 }
 
-main{ /*elemento pai no flexbox;*/
+section{ /*elemento pai no flexbox;*/
     display: flex;
     justify-content : center; /*muda o comportamento dos elementos filhos*/
     align-items: center;/*muda o comportamento dos elementos filhos*/
     height: 100vh;
     width: 100vw;
-    position: absolute;
-    transform: translate(50% 50%);
-    
+
 }
 
 /*align-items e justify-content são propriedades que só funcionarão se o display: flex estiver habilitado; e estes só mudarão o comportamento dos elementos filhos, e nao do proprio elemento pai*/

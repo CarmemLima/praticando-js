@@ -8,27 +8,31 @@
 </head>
 <body> 
     
-    <main>
-        <span id="image">
-            <img src="imagens/img-tela-login.jpg" alt="img">
-        </span>
-        
-        <span id="login">
-            <form action="#" method="get"  > <!--os parametros do input so funcionarão se estiverem dentro da tag form-->
-            
-                <h1>Olá,<br>seja bem vindo!</h1>
-                <p>digite seus dados para entrar</p>
-            
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" class="campo" required minlength="5" maxlength="20" autocomplete="on">
-                <br>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" class="campo" minlength="20" required autocomplete="on">
-                <br><br>
-                <button type="submit" onclick="clique()" id="pp">LogIn</button>
+    <section>
+        <container  id="image">
+            <span>
+                <img src="imagens/img-tela-login.jpg" alt="img">
             </span>
-        </form>
-    </main>
+        </container>
+        
+
+        <container id="login">
+            <span>
+                <form action="#" method="get"  > <!--os parametros do input so funcionarão se estiverem dentro da tag form-->
+                    <h1>Olá,<br>seja bem vindo!</h1>
+                    <p>digite seus dados para entrar</p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" class="campo" required minlength="5" maxlength="20" autocomplete="on">
+                    <br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" class="campo" minlength="20" required autocomplete="on">
+                    <br><br>
+                    <button type="submit" onclick="clique()" id="pp">LogIn</button>
+            </form>
+        </span>
+        </container>
+        
+    </section>
 
    <script>
         /*function clique(){
