@@ -31,10 +31,14 @@ main{ /*elemento pai no flexbox;*/
     align-items: center;/*muda o comportamento dos elementos filhos*/
     height: 100vh;
     width: 100vw;
+    position: absolute;
+    transform: translate(50% 50%);
     
 }
 
 /*align-items e justify-content são propriedades que só funcionarão se o display: flex estiver habilitado; e estes só mudarão o comportamento dos elementos filhos, e nao do proprio elemento pai*/
+
+
 
 img{ /*elemento filho do main*/
     display: flex;
