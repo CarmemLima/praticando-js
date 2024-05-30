@@ -6,22 +6,19 @@
     scrollbar-width: none; /*remove a barra de rolagem*/
       
 }
-/*
-@media screen and (min-width: 150px) and (max-width: 600px){
-    media screen para telas menores/celular
+
+@media screen and (min-width: 370px) and (max-width: 600px){
+    /*media screen para telas menores/celular*/
 
 
 div>img{
-        width: 230px;
+        width: 300px;
         height: 300px;
-        margin-left: 40px;
+        
     }
     
-#login{
-    margin-right: 40px;
-    }    
+  
 }
-*/
 
 
 body, html{
