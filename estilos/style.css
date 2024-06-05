@@ -12,9 +12,11 @@
 
     section>img{
         max-width: 45vw;
+        max-height: 38vh;
        }
        section#login{
          max-width: 40vw;
+         max-height: 30.3vh;
        }
      
     
@@ -85,15 +87,13 @@ p{
     font-size: small;
 }
 
-form{
+/*form{
     
     background-color: rgba(255, 255, 255, 0.121);
     border-radius: 5px;
     margin: 4px;
+}*/
 
-    
-
-}
 .campo:hover{
     background-color: rgba(255, 255, 255, 0.333);
 }
