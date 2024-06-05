@@ -6,94 +6,60 @@
     scrollbar-width: none; /*remove a barra de rolagem*/
       
 }
+
 @media screen and (max-width: 768px) {
- 
 
-#imagem, #login{
- max-width: 170px;
-   
-}
-img{
-    max-width: 170px;
-    min-height: 300px;
-}
+  section>img{
+   max-width: 50vw;
+  }
+  section#login{
+    max-width: 40vw;
+  }
 
-
-/*#imagem{
     
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(35%, -50%);
-    
-    
-}
-#login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-35%, -50%);
-}*/
-
-
-
-
 }
 
 
 body, html{
    
-    width: 100vw;
+    width: auto;
     background-color: rgba(7, 37, 37, 0.767);
     background: url('../imagens/fundo-tech.jpg');
 }
 
 
-main{ /*elemento pai no flexbox;*/
-  
+span.container{ /*elemento pai no flexbox;*/
+    
     display: flex;
-    justify-content : center; /*muda o comportamento dos elementos filhos*/
-  
-    /*align-items: center; muda o comportamento dos elementos filhos*/
-    /*flex-wrap: nowrap;*/
     position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
+    
   /*position, top, left e trasnform centralizam na tela*/
     
 }
 
 /*align-items e justify-content são propriedades que só funcionarão se o display: flex estiver habilitado; e estes só mudarão o comportamento dos elementos filhos, e nao do proprio elemento pai*/
 
-#imagem{/*elemento filho do main*/
+section>img{/*elemento filho do span*/
    
     border: 1px solid rgba(0, 0, 0, 0.332);
-    width: 300px;
     height: 300px;
-    
     background-color: rgba(255, 255, 255, 0.073);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 
 }
 
-img{ /*elemento q está dentro da section imagem*/
-  
-  border: 1px solid rgba(0, 0, 0, 0.332);
-  width: 300px;
-  background-color: rgba(255, 255, 255, 0.073);
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
- 
-   
-}
 
-#login { /*elemento filho do main, e pai referente ao texto*/
+
+section#login{ /*elemento filho do main, e pai referente ao texto*/
+ 
     display: flex;
     align-items: center; /*muda o comportameento do texto*/
     justify-content: center; /*muda o comportameento do texto*/
-    flex-wrap: nowrap;
     border: 1px solid rgba(0, 0, 0, 0.332);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-top-right-radius: 50px;
@@ -118,12 +84,12 @@ p{
     font-size: small;
 }
 
-.campo{
-     
+form{
+    
     background-color: rgba(255, 255, 255, 0.121);
     border-radius: 5px;
     margin: 4px;
-    
+
     
 
 }
