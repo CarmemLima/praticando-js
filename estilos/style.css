@@ -7,10 +7,13 @@
       
 }
 
-@media screen and (max-width: 308px) {
+@media screen and (max-width: 375px) {
 
 section.container{
-   max-width: 100px;
+   max-width: 100vw;
+}
+img, div#login{
+    width: 150px;
 }
 }
 
@@ -47,7 +50,7 @@ section.container{ /*elemento pai no flexbox;*/
 /*align-items e justify-content são propriedades que só funcionarão se o display: flex estiver habilitado; e estes só mudarão o comportamento dos elementos filhos, e nao do proprio elemento pai*/
 
 img{/*elemento filho da section*/
-    display: block;
+ 
     height: 300px;
     
 
