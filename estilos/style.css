@@ -7,19 +7,29 @@
       
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px){
 #imagem, img{
-    max-width: 180px;
-    max-height: 230px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 #login{
-    max-width: 100px;
-    max-height: 180px;
+    max-width: 150px;
+    max-height: 150px;
+}
 }
 
+@media (max-width: 390px){
+    #imagem, img{
+        max-width: 140px;
+        max-height: 200px;
+    }
+    
+    #login{
+        max-width: 120px;
+        max-height: 150px;
+    }
 }
-
 
 
 body{
@@ -80,6 +90,7 @@ div#login{ /*elemento filho da section, e pai referente ao texto*/
     align-items: center; /*muda o comportameento do texto*/
     justify-content: center; /*muda o comportameento do texto*/
     height: 250px;
+    width: 250px;
     padding: 25px;
     text-align: center;
    
@@ -92,23 +103,25 @@ div#login{ /*elemento filho da section, e pai referente ao texto*/
    
 }
 
-h1, p, label{
-    padding: 5px;
-    color: rgb(165, 189, 254);
-}
-
-
-
-p{
-    font-size: small;
-}
-
 form{
-    width: 100%;
+    width: 200px;
     background-color: rgba(255, 255, 255, 0.121);
     border-radius: 5px;
     margin: 4px;
+
+    
+    
 }
+h1{
+    font-size: small;
+    padding: 5px;
+    color: rgb(165, 189, 254);
+   
+   
+   
+}
+
+
 
 .campo:hover{
     background-color: rgba(255, 255, 255, 0.333);
