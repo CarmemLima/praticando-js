@@ -7,30 +7,32 @@
       
 }
 
-@media (max-width: 760px){
+@media (max-width: 462px){
+
 #imagem, img{
-    max-width: 200px;
-    max-height: 200px;
+   max-width: 150px;
+   max-height: 220px;
 }
-
 #login{
-    max-width: 150px;
-    max-height: 150px;
-}
+    max-width: 110px;
+    max-height: 170px;
 }
 
-@media (max-width: 390px){
+}
+
+@media (max-width: 320px){
     #imagem, img{
-        max-width: 140px;
-        max-height: 200px;
+        max-width: 150px;
+        max-height: 180px;
+
     }
     
     #login{
-        max-width: 120px;
-        max-height: 150px;
+        max-width: 100px;
+        max-height: 130px;
+        
     }
 }
-
 
 body{
     height: 100vh;
