@@ -11,11 +11,16 @@
 
 #imagem, img{
    max-width: 150px;
-   max-height: 220px;
+   max-height: 200px;
 }
 #login{
     max-width: 110px;
-    max-height: 170px;
+    max-height: 150px;
+    
+}
+form {
+    max-width: 140px;
+    
 }
 
 }
@@ -106,23 +111,30 @@ div#login{ /*elemento filho da section, e pai referente ao texto*/
 }
 
 form{
-    width: 200px;
-    background-color: rgba(255, 255, 255, 0.121);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+       background-color: rgba(255, 255, 255, 0.121);
     border-radius: 5px;
     margin: 4px;
 
     
     
 }
-h1{
+h1, p{
     font-size: small;
     padding: 5px;
     color: rgb(165, 189, 254);
-   
-   
-   
+    
 }
+input{
+    width: 130px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.163);
+    border: none;
 
+}
 
 
 .campo:hover{
