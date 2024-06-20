@@ -10,32 +10,25 @@
 @media (max-width: 462px){
 
 #imagem, img{
-   max-width: 150px;
+   max-width: 170px;
    max-height: 200px;
 }
 #login{
-    max-width: 110px;
+    max-width: 130px;
     max-height: 150px;
     
 }
-form {
-    max-width: 140px;
-    
-}
-
 }
 
 @media (max-width: 320px){
     #imagem, img{
         max-width: 150px;
         max-height: 180px;
-
     }
     
     #login{
         max-width: 100px;
         max-height: 130px;
-        
     }
 }
 
@@ -69,7 +62,7 @@ section.container{ /*elemento pai no flexbox;*/
 
 /*align-items e justify-content são propriedades que só funcionarão se o display: flex estiver habilitado; e estes só mudarão o comportamento dos elementos filhos, e nao do proprio elemento pai*/
 
-section>#imagem{/*elemento filho da section*/
+section>#imagem{/*elemento filho da section container. a imagem está dentro da div da section*/
     width: 300px;
     height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.332);
@@ -91,7 +84,7 @@ img{
 
 
 
-div#login{ /*elemento filho da section, e pai referente ao texto*/
+div#login{ /*elemento filho da section container, e elemento pai referente ao form(texto)*/
  
     display: flex;
     align-items: center; /*muda o comportameento do texto*/
@@ -115,42 +108,32 @@ form{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-       background-color: rgba(255, 255, 255, 0.121);
     border-radius: 5px;
     margin: 4px;
-
-    
-    
 }
+
 h1, p{
     font-size: small;
     padding: 5px;
     color: rgb(165, 189, 254);
     
 }
-input{
-    width: 130px;
+input.dados{
+    width: 150px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.163);
     border: none;
 
 }
+input.botao{
 
-
-.campo:hover{
-    background-color: rgba(255, 255, 255, 0.333);
+    width: 70px;
+    height: 25px;
+    border-radius: 5px;
+    color:  rgb(206, 219, 255);
+    background-color: rgba(255, 255, 255, 0.163);
+    border: none;
 }
-
-button{
-    color: rgb(165, 189, 254);
-    background-color: rgba(255, 255, 255, 0.186);
-    padding: 5px;
-    border-radius: 8px;
-    border-style: none;
-}
-
-button:hover{
+input.botao:hover{
    background-color: rgba(255, 255, 255, 0.333);
-   box-shadow: 1px 1px rgba(10, 10, 10, 0.479);
 }
-
