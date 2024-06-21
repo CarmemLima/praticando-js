@@ -20,15 +20,15 @@
                 <h1>Olá, seja bem vindo!</h1>
                 <!--<label for="iname">nome<input type="text" name="iname" id="iname"></label>-->
                 <p>
-                    <label for="inome">Nome</label>
-                    <input class="dados" type="text" name="nome" id="inome">
+                    <label for="inome">Nome:</label>
+                    <input class="dados" type="text" name="nome" id="inome" required>
                 </p>
                 <p>
-                    <label for="email">E-mail</label>
-                    <input class="dados" type="iemail" name="email" id="iemail" maxlength="25">
+                    <label for="email">E-mail:</label>
+                    <input class="dados" type="iemail" name="email" id="iemail" maxlength="25" required>
                 </p>
                 <p>
-                    <input class="botao" type="submit" value="Entrar">
+                    <input class="botao" type="submit" value="Entrar" onclick="clique()">
                     <input class="botao" type="reset" value="Limpar">
                 </p>
             </form>
@@ -37,54 +37,11 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!--
-        <section>
-        <container  id="image">
-            <div>
-                <img src="imagens/img-tela-login.jpg" alt="img">
-            </div>
-        </container>
-        
-
-        <container id="login">
-            <div>
-                <form action="#" method="get"  > <!--os parametros do input so funcionarão se estiverem dentro da tag form->
-                    <h1>Olá,<br>seja bem vindo!</h1>
-                    <p>digite seus dados para entrar</p>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" class="campo" required minlength="5" maxlength="20" autocomplete="on">
-                    <br>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" class="campo" minlength="20" required autocomplete="on">
-                    <br><br>
-                    <button type="submit" onclick="clique()" id="pp">LogIn</button>
-            </form>
-        </div>
-        </container>
-        
-    </section> -->
-
    <script>
-        /*function clique(){
-        let enter = document.getElementById('pp')
+        function clique(){
+        let enter = document.getElementsByClassName('botao')
         window.alert('Para continuar faça um pix de R$1000,00')
-        }*/
+        }
         
     </script>
     
