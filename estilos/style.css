@@ -15,7 +15,7 @@
 }
 #login{
     
-    max-width: 130px;
+    max-width: 150px;
     max-height: 150px;
 }
 
@@ -42,13 +42,13 @@ input.botao{
     }
     
     #login{
-        max-width: 100px;
+        max-width: 120px;
         max-height: 130px;
         
     }
  
     input.dados{
-        max-width: 100px;
+        max-width: 90px;
     }
     
     input.botao{
