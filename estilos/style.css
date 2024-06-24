@@ -46,6 +46,12 @@ input.botao{
         max-height: 130px;
         
     }
+    h1 , p{
+   
+        display: flex;
+        margin: 2px;
+        
+    }
  
     input.dados{
         max-width: 90px;
