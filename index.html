@@ -25,10 +25,10 @@
                 </p>
                 <p>
                     <label for="email">E-mail:</label>
-                    <input class="dados" type="iemail" name="email" id="iemail" maxlength="25" required>
+                    <input class="dados" type="iemail" name="email" id="iemail"  required>
                 </p>
                 <p>
-                    <input class="botao" type="submit" value="Entrar" onclick="clique()">
+                    <input class="botao" type="submit" value="Entrar" onclick="enter()">
                     <input class="botao" type="reset" value="Limpar">
                 </p>
             </form>
@@ -38,13 +38,16 @@
 
 
    <script>
-        function clique(){
-        let dados = document.getElementsByClassName('dados')    
-        let enter = document.getElementsByClassName('botao')
-        if (dados){
-            window.alert('Para continuar faça um pix de R$1000,00')
-        }
-       
+        let dados = document.getElementsByClassName('dados')
+        let n = dados.length < 5 /*variavel para o maximo de caracteres obrigatorio */
+      
+        function enter(){ /*function para o botao enter*/
+            if(n){
+                window.alert('Complete os dados!')
+           } else{
+                window.alert('Para continuar faça um pix de R$1.000,00')
+           }
+          
         }
 
         
