@@ -21,14 +21,14 @@
                 <!--<label for="iname">nome<input type="text" name="iname" id="iname"></label>-->
                 <p>
                     <label for="inome">Nome:</label>
-                    <input class="dados" type="text" name="nome" id="inome" required>
+                    <input class="dados" type="text" name="nome" id="inome" required >
                 </p>
                 <p>
                     <label for="email">E-mail:</label>
-                    <input class="dados" type="iemail" name="email" id="iemail"  required>
+                    <input class="dados" type="iemail" name="email" id="iemail" required minlength="15">
                 </p>
                 <p>
-                    <input class="botao" type="submit" value="Entrar" onclick="enter()">
+                    <input class="botao" type="button" value="Entrar" onclick="enter()">
                     <input class="botao" type="reset" value="Limpar">
                 </p>
             </form>
@@ -38,15 +38,23 @@
 
 
    <script>
-        let dados = document.getElementsByClassName('dados')
-        let n = dados.length < 5 /*variavel para o maximo de caracteres obrigatorio */
-      
-        function enter(){ /*function para o botao enter*/
-            if(n){
-                window.alert('Complete os dados!')
-           } else{
-                window.alert('Para continuar faça um pix de R$1.000,00')
-           }
+     function enter(){ /*function para o botao enter*/
+        let dados = document.getElementsByClassName('dados');
+        let complet = true; 
+        for (let a = 0; a < dados.length; a++){
+       
+       
+                if(dados[a].value.length <= 5){
+                    complet = false;
+                    break;
+                } 
+            }
+            if (complet){
+                window.alert('correto')
+            }
+            else{
+                    window.alert('Complete os dados')
+                }
           
         }
 
