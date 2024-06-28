@@ -21,14 +21,14 @@
                 <!--<label for="iname">nome<input type="text" name="iname" id="iname"></label>-->
                 <p>
                     <label for="inome">Nome:</label>
-                    <input class="dados" type="text" name="nome" id="inome" required >
+                    <input type="text" name="nome" id="inome" class="dados"  minlength="5" required >
                 </p>
                 <p>
                     <label for="email">E-mail:</label>
-                    <input class="dados" type="iemail" name="email" id="iemail" required minlength="15">
+                    <input type="email" name="email" id="iemail" class="dados"minlength="5" required >
                 </p>
                 <p>
-                    <input class="botao" type="button" value="Entrar" onclick="enter()">
+                    <input class="botao" type="button" value="Entrar" onclick="enter()" src="enter.html">
                     <input class="botao" type="reset" value="Limpar">
                 </p>
             </form>
@@ -38,7 +38,11 @@
 
 
    <script>
-     function enter(){ /*function para o botao enter*/
+    function enter(){
+      
+    }
+
+     /*!function enter(){ /*function para o botao enter
         let dados = document.getElementsByClassName('dados');
         let complet = true; 
         for (let a = 0; a < dados.length; a++){
@@ -57,6 +61,7 @@
                 }
           
         }
+        */
 
         
     </script>
