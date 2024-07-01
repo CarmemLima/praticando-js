@@ -28,7 +28,7 @@
                     <input type="email" name="email" id="iemail" class="dados"minlength="5" required >
                 </p>
                 <p>
-                    <input class="botao" type="button" value="Entrar" onclick="enter()" src="enter.html">
+                    <input class="botao" type="button" value="Entrar" onclick="enter()" src="enter.html" >
                     <input class="botao" type="reset" value="Limpar">
                 </p>
             </form>
@@ -38,8 +38,14 @@
 
 
    <script>
+     let dados = 1;
+    
     function enter(){
-      
+        if(dados < 1){
+            window.alert('Para continuar, faça um pix de R$1.000,00')
+        }else {
+            window.alert('Complete os dados')
+        }
     }
 
      /*!function enter(){ /*function para o botao enter
