@@ -26,7 +26,7 @@ h1 , p{
     
 }
 input.dados{
-    max-width: 120px;
+    max-width: 110px;
 }
 
 input.botao{
@@ -46,10 +46,8 @@ input.botao{
         max-height: 130px;
         
     }
-  
- 
     input.dados{
-        max-width: 100px;
+        max-width: 90px;
     }
     
     input.botao{

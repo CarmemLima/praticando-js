@@ -16,19 +16,19 @@
         
     
         <div id="login">
-            <form action="#">
+            <form action="#" autocomplete="on">
                 <h1>Olá, seja bem vindo!</h1>
                 <!--<label for="iname">nome<input type="text" name="iname" id="iname"></label>-->
                 <p>
                     <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome" class="dados"  minlength="5" required >
+                    <input type="text" name="nome" id="inome" class="dados"  required >
                 </p>
                 <p>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="iemail" class="dados"minlength="5" required >
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" class="dados" required >
                 </p>
                 <p>
-                    <input class="botao" type="button" value="Entrar" onclick="enter()" src="enter.html" >
+                    <input class="botao" type="button" value="Entrar" onclick="enter()" src="enter.html" > <!--o tipo do input foi escolhido 'button' para evitar que o formulário seja enviado antes de validar os campos.-->
                     <input class="botao" type="reset" value="Limpar">
                 </p>
             </form>
@@ -38,23 +38,37 @@
 
 
    <script>
-     let dados = 1;
+    let dados = document.getElementsByClassName('dados');
+   
     
     function enter(){
-        if(dados < 1){
-            window.alert('Para continuar, faça um pix de R$1.000,00')
-        }else {
-            window.alert('Complete os dados')
-        }
+       for(let campo = 0; campo == 0; campo++)
+       /*o FOR é usado em estruturas de repetiçao, situações nas quais é necessário realizar um loop ou laço/iteração, para que execute a açao de um bloco (if) enquanto for uma informaçao verdadeira. a partir do momento que seja falsa a informaçao, ele irá executar o bloco seguinte (else). a estrutura é ividida em tres partes separadas por ;, sendo elas inicializaçao; teste logico/condiçao; e incremento.
+        no primeiro espaço (let campo) é uma variavel criada para inicialização, de onde parte a condiçao;
+        no segundo espaço inserimos a condição a ser executada enquanto a açao for verdadeira. nesse caso enquanto o campo for igual a zero.
+        no terceiro espaço colocamos o incremento, nesse caso o incremento de mais um caractere ate chegar o limite em que a açao continuara sendo verdadeira, e a partir do momento que ultrapassar o limite a açao sera executada no bloco seguinte (o do else).
+        */
+
+       if(dados[campo].value.length <=5)/*entre colchetes inserimos o parametro da variavel criada para ser executada dentro da variavel dados. adiciona-se o .value.lenght para que o programa identifique a quantidade do itens contidos na variavel, na qual foi definida <= 5 para que execute a açao enquanto for <= 5 caracteres. o .length apenas mostra dados do que tem dentro de um elemento (nesse caso na variavel dados), ele nao executa nenhuma açao.*/
+       {
+        window.alert('Complete os dados')
+       }else{
+        window.alert('Para continuar faça um pix de R$1.000,00')
+       }
     }
 
-     /*!function enter(){ /*function para o botao enter
+
+
+
+
+
+       /* estrutura indicada pelo chatgpt:
+        
+      /*function enter(){ 
         let dados = document.getElementsByClassName('dados');
         let complet = true; 
         for (let a = 0; a < dados.length; a++){
-       
-       
-                if(dados[a].value.length <= 5){
+            if(dados[a].value.length <= 5){
                     complet = false;
                     break;
                 } 
