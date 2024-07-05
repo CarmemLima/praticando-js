@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body> 
-
-<section class="container">
+<main>
     
-       <div id="imagem">
-            <img src="imagens/img-tela-login.jpg" alt="imagem">
-       </div>
-        
+    <section class="container">
     
-        <div id="login">
-            <form action="#" autocomplete="on">
-                <h1>Olá, seja bem vindo!</h1>
-                <!--<label for="iname">nome<input type="text" name="iname" id="iname"></label>-->
-                <p>
-                    <label for="inome">Nome: </label>
-                    <input type="text" name="nome" id="inome" class="dados"  required >
-                </p>
-                <p>
-                    <label for="iemail">E-mail: </label>
-                    <input type="email" name="email" id="iemail" class="dados" required >
-                </p>
-                <p>
-                    <input class="botao" type="button" value="Entrar" onclick="enter()" src="enter.html" > <!--o tipo do input foi escolhido 'button' para evitar que o formulário seja enviado antes de validar os campos.-->
-                    <input class="botao" type="reset" value="Limpar">
-                </p>
-            </form>
-        </div>
+           <div id="imagem">
+                <img src="imagens/img-tela-login.jpg" alt="imagem">
+           </div>
     
-</section>
-
+    
+            <div id="login">
+                <form action="#" autocomplete="on">
+                    <h1>Olá, seja bem vindo!</h1>
+                    <!--<label for="iname">nome<input type="text" name="iname" id="iname"></label>-->
+                    <p>
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" class="dados"  required >
+                    </p>
+                    <p>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" class="dados" required >
+                    </p>
+                    <p>
+                        <input class="botao" type="button" value="Entrar" onclick="enter()" src="enter.html" > <!--o tipo do input foi escolhido 'button' para evitar que o formulário seja enviado antes de validar os campos.-->
+                        <input class="botao" type="reset" value="Limpar">
+                    </p>
+                </form>
+            </div>
+    
+    </section>
+    <footer>Página desenvolvida por Carmem Lima</footer>
+</main>
 
    <script>
     let dados = document.getElementsByClassName('dados');

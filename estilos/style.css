@@ -10,23 +10,25 @@
 @media (max-width: 462px){
 
 #imagem, img{
-   max-width: 170px;
+   max-width: 150px;
    max-height: 200px;
 }
 #login{
     
-    max-width: 150px;
+    max-width: 145px;
     max-height: 150px;
 }
 
 h1 , p{
-   
-    display: flex;
+    
+    /*display: flex;
+    align-items: center;*/
     margin: 2px;
     
 }
 input.dados{
-    max-width: 110px;
+   max-width: 130px;
+
 }
 
 input.botao{
@@ -37,12 +39,12 @@ input.botao{
 
 @media (max-width: 320px){
     #imagem, img{
-        max-width: 140px;
+        max-width: 120px;
         max-height: 180px;
     }
     
     #login{
-        max-width: 130px;
+        max-width: 100px;
         max-height: 130px;
         
     }
@@ -52,9 +54,9 @@ input.botao{
         margin: 2px;
         
     }
-    /*input.dados{
+   input.dados{
         max-width: 100px;
-    }*/
+    }
     
     input.botao{
         margin: 5px;
@@ -167,4 +169,14 @@ input.botao{
 }
 input.botao:hover{
    background-color: rgba(255, 255, 255, 0.333);
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    text-align: center;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.347);
 }
