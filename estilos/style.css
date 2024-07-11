@@ -40,8 +40,8 @@ form>p{
 }
 
 input.dados{
-    margin-left: 3px;
-    max-width: 135px;
+    
+    max-width: 130px;
     height: 20px;
     color: white;
 
@@ -162,6 +162,7 @@ img{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
+
 
 
 
