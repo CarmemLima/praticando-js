@@ -47,7 +47,7 @@ input.dados{
 
 }
 
-input.botao{
+/*input.botao*/p>button{
     margin: 5px;
     max-width: 50px;
 }
@@ -209,7 +209,7 @@ input.dados{
     color: rgb(206, 219, 255);
 
 }
-input.botao{
+.botao{
 
     width: 70px;
     height: 25px;
