@@ -32,16 +32,11 @@
                     </p>
                     
                     <p>
-                        
                         <button class="botao" id="botaoEntrar"  onclick="enter()" type="button">Entrar</button>
-                           <!-- <input class="botao" type="button" value="Entrar" onclick="enter(link)" >-->
-                           
-                       <!--o tipo do input foi escolhido 'button' para evitar que o formulário seja enviado antes de validar os campos.-->
+                        <!--a tag button foi substituida pela tag input para evitar que o formulário seja enviado antes de validar os campos.-->
                         <input class="botao" type="reset" value="Limpar" >
-                        
                     </p>
                     
-                
                 </form>
             </div>
     
@@ -49,36 +44,46 @@
     <footer>Desenvolvido por Carmem Lima</footer>
      
 </main>
+
 <script>
-   
     let dados = document.getElementsByClassName('dados'); 
-   
-    
     function enter(){
-       
         let dadosValidos = true;
 
         for (let campo = 0; campo < dados.length; campo++){
+            /* o .length apenas mostra dados do que tem dentro de um elemento (nesse caso na variavel dados), ele nao executa nenhuma açao.*/
+
+            let valor = dados[campo].value;
+            /*o conteudo dentro dos colchetes sao os indices/identificadores/chaves referentes a array(variavel composta) dados. variaveis composta permitem armazenar mais de um valor na mesma estrutura, diferentemente das variaveis simples que guardam apenas um valor.*/
+            /*essa variavel valor foi criada para o uso dos dois primeiros if, o primeiro para a qtdade de caracteres e inserir email valido, e o segundo para inserir um email valido com @.*/
             
-       /*o FOR é usado em estruturas de repetiçao, situações nas quais é necessário realizar um loop ou laço/iteração, para que execute a açao de um bloco (if) enquanto for uma informaçao verdadeira. a partir do momento que seja falsa a informaçao, ele irá executar o bloco seguinte (else). a estrutura é ividida em tres partes separadas por ;, sendo elas inicializaçao; teste logico/condiçao; e incremento.
-        no primeiro espaço (let campo) é uma variavel criada para inicialização, de onde parte a condiçao;
-        no segundo espaço inserimos a condição a ser executada enquanto a açao for verdadeira. nesse caso enquanto o campo for igual a zero.
-        no terceiro espaço colocamos o incremento, nesse caso o incremento de mais um caractere ate chegar o limite em que a açao continuara sendo verdadeira, e a partir do momento que ultrapassar o limite a açao sera executada no bloco seguinte (o do else).
-        */
+            /*o FOR é usado em estruturas de repetiçao, situações nas quais é necessário realizar um loop ou laço/iteração, para que execute a açao de um bloco (if) enquanto for uma informaçao verdadeira. a partir do momento que seja falsa a informaçao, ele irá executar o bloco seguinte (o proximo if, ou else).
+            a estrutura é dividida em tres partes separadas por ;, sendo elas inicializaçao; teste logico/condiçao; e incremento.
+            no primeiro espaço (let campo) é uma variavel criada para inicialização, de onde parte a condiçao;
+            no segundo espaço inserimos a condição a ser executada enquanto a açao for verdadeira. nesse caso se a açao for true, ou seja, se o campo for igual a zero.
+            no terceiro espaço colocamos o incremento, nesse caso o incremento de mais um caractere ate chegar o limite em que a açao continuara sendo verdadeira, e a partir do momento que ultrapassar o limite a açao sera executada no bloco seguinte (o proximo if, ou else).
+            OBS: PODE SER USADO MAIS DE UM IF DENTRO DO BLOCO (como nesse exemplo), SEM NECESSIDADE DE ELSE.
+            */
 
-       if (dados[campo].value.length <= 5)/*entre colchetes inserimos o parametro da variavel criada para ser executada dentro da variavel dados. adiciona-se o .value.lenght para que o programa identifique a quantidade do itens contidos na variavel, na qual foi definida <= 5 para que execute a açao enquanto for <= 5 caracteres. o .length apenas mostra dados do que tem dentro de um elemento (nesse caso na variavel dados), ele nao executa nenhuma açao.*/
-       {
+            if (valor.length < 5 && !valor.includes('@') ){
+            /*o .includes determina se uma variavel composta (array) contem um elemento especifico (incluso dentro dos parenteses), nesse caso o @.
+            o ! antes da variavel significa negaçao, que nesse caso é se nao estiver incluso o caractere no campo da variavel 'dados' sera considerado os dadosValidos como falso e ira executar o alert*/
             dadosValidos = false;
-            window.alert('Complete os dados');
+            window.alert('Insira pelo menos 5 caracteres, e um e-mail válido');
             break;
-           
-       }
-    }
-    if (dadosValidos){
-        window.location.href = "enter.html";
-    } 
-}
+            }
 
+            if (dados[campo].type === 'email' && !valor.includes('@')){
+            dadosValidos = false;
+            window.alert('Insira um e-mail válido');
+            break;
+            }
+        }
+
+        if (dadosValidos){
+        window.location.href = "enter.html";
+        } 
+    }
 </script>
   
 </body>
