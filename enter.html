@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
-    <h1>Digite seus dados no formulário abaixo:</h1>
+
+<body >
+    <section id="container_one">
+        <div id="caixatexto">
+            <h1>Olá, <span id="name">nome</span>,<br>seja bem vindo ao meu portfólio.</h1>
+        </div>
+        
+        <div id="caixasobre">
+            <div id="destaque">
+                <h1>sobre mim</h1>
+                    <h3>Carmem Lima <br>
+                        34 anos <br>
+                        Desenvolvedora Web
+                    </h3>
+            </div>
+            <img src="imagens/foto_perfil_vetor.png" alt="fotoperfil">
+        </div>
+
+        <div id="text">
+            <p>Sou criadora de conteúdo, apaixonada pelo universo do design.
+            O senso criativo é uma habilidade nata, que me permite conectar e aplicarideias para criar novas perspectivas e soluções.
+            Atualmente atuo como designer gráfico freelancer. Crio artes autorais parasocial media, retratos vetoriais personalizados, banners, entre outros criativos.Também estou iniciando como desenvolvedora web, criando landing pagespara e-commerces.
+            Se você precisa de criativos para o seu perfil, produto ou negócio, estou aquipara colaborar. Confira abaixo o meu portfólio completo.</p>
+        </div>
+    </section>
+
+    <section id="container_two" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        
+        <div id="skills" style="margin: 20px; ">
+            <!--aqui usei o estilo css no proprio html, pra nao acumular no css externo-->
+            <h3>softwares - tecnologias</h3>
+        
+                <div style="margin: 20px; display: flex; text-align: center;" >
+                    <div>
+                        <img src="imagens/icone-html.png" alt="iconehtml" style="width: 50px; ">
+                        <p>HTML5</p>
+                    </div>
+                    <div>
+                        <img src="imagens/icone-css.png" alt="iconecss" style="width: 50px;">
+                        <p>CSS3</p>
+                    </div>
+                    <div>
+                        <img src="imagens/icone-javascript.png" alt="iconejs" style="width: 50px;">
+                        <p>JS</p>
+                    </div>
+                </div>
+        </div>
+
+        <div id="language" style="margin: 20px; ">
+            <h3>idiomas</h3>
+                <p>Português (nativo)</p>
+                <p>Inglês (B1)</p>
+        </div>
+
+        <div id="contact" style="margin: 20px; ">
+            <h3>contato</h3>
+                <div style="margin: 20px; display: flex; flex-wrap: wrap; flex-direction: column;">
+                    <div style="display: flex; align-items: center; " >
+                        <img src="imagens/logo whatsapp.png" style="width: 20px;" alt="wpp">
+                        <p>(85)99958.6963</p>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <img src="imagens/icone-email.png" style="width: 20px;" alt="email">
+                        <p>cl.business.for@gmail.com</p>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <img src="imagens/logo instagram.png" style="width: 20px;" alt="insta">
+                        <p>@ceeli_design</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+ 
+   
     
 </body>
 </html>
