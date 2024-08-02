@@ -45,9 +45,5 @@ div#destaque{
 img{
     width: 40vw;
 }
-div >p{
-    width: auto;
-    margin: 20px;
-    text-align: justify;
-}
+
 
